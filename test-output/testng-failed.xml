@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="E:/Automation/AutomationTaskBS(failed)">
+    <classes>
+      <class name="testrunner.PlaceOrderPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyPlaceorderMessage"/>
+        </methods>
+      </class> <!-- testrunner.PlaceOrderPageTest -->
+    </classes>
+  </test> <!-- E:/Automation/AutomationTaskBS(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
