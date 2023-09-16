@@ -1,10 +1,12 @@
 package pages;
 
+import base.Listener;
 import base.TestBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Listeners;
 
 import java.util.concurrent.TimeUnit;
 

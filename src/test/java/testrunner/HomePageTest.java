@@ -1,13 +1,15 @@
 package testrunner;
 
+import base.Listener;
 import base.TestBase;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.AddtoCartPage;
 import pages.HomePage;
 
 import java.net.MalformedURLException;
-
 public class HomePageTest extends TestBase {
     HomePage homePage;
     AddtoCartPage addtoCartPage;
@@ -16,7 +18,7 @@ public class HomePageTest extends TestBase {
         super();
     }
 
-    @BeforeMethod
+    @BeforeClass
     public void setup() {
         try {
             initialization();
@@ -24,7 +26,6 @@ public class HomePageTest extends TestBase {
             throw new RuntimeException(e);
         }
         homePage = new HomePage();
-        addtoCartPage = new AddtoCartPage();
     }
     @Test()
     public void verifyClickonElement() throws InterruptedException {

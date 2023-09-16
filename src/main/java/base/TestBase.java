@@ -2,6 +2,7 @@ package base;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -37,10 +38,15 @@ public class TestBase {
         caps.setCapability("appActivity","com.bs.ecommerce.main.SplashScreenActivity");
         caps.setCapability("automationName","UiAutomator2");
         caps.setCapability("app","E:\\BS\\nopstationCart_4.40.apk");
-        caps.setCapability("autoGrantPermissions","true");
+        caps.setCapability("noReset",true);
+        caps.setCapability("fullReset",false);
 
         URL url = new URL("http://127.0.0.1:4723");
         driver = new AndroidDriver(url,caps);
 
+    }
+    @AfterTest()
+    public void teardown(){
+        driver.quit();
     }
 }
