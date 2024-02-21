@@ -7,9 +7,14 @@
         <methods>
           <include name="setup"/>
           <include name="verifyPlaceorderMessage"/>
-          <include name="teardown"/>
         </methods>
       </class> <!-- testrunner.PlaceOrderPageTest -->
+      <class name="testrunner.PaymentInfoPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyPaymentInfo"/>
+        </methods>
+      </class> <!-- testrunner.PaymentInfoPageTest -->
     </classes>
   </test> <!-- All Test Cases(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

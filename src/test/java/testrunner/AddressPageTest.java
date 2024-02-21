@@ -39,5 +39,6 @@ public class AddressPageTest extends TestBase {
         addressPage.fillUpAddress(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("email"), prop.getProperty("company"),
                 prop.getProperty("city"),prop.getProperty("address"),prop.getProperty("postal"));
 
+
     }
 }

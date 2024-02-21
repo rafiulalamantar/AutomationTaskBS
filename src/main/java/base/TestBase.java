@@ -2,7 +2,6 @@ package base;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,7 +17,7 @@ public class TestBase {
 
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream("E:\\Automation\\AutomationTask" +
+            FileInputStream ip = new FileInputStream("E:\\Automation\\AutomationTaskBS" +
                     "\\src\\main\\java\\config\\config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
@@ -39,14 +38,13 @@ public class TestBase {
         caps.setCapability("automationName","UiAutomator2");
         caps.setCapability("app","E:\\BS\\nopstationCart_4.40.apk");
         caps.setCapability("noReset",true);
-        caps.setCapability("fullReset",false);
 
         URL url = new URL("http://127.0.0.1:4723");
         driver = new AndroidDriver(url,caps);
 
     }
-    @AfterTest()
-    public void teardown(){
-        driver.quit();
-    }
+//    @AfterTest()
+//    public void teardown(){
+//        driver.quit();
+//    }
 }

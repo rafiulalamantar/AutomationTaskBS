@@ -48,6 +48,7 @@ public class AddressPage extends TestBase {
         Thread.sleep(5000);
         selectstateDropdown.click();
         selectState.click();
+        Thread.sleep(2000);
         firstnameField.sendKeys(firstname);
         lastnameField.sendKeys(lastname);
         emailField.sendKeys(email);
