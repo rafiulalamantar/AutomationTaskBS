@@ -1,0 +1,1 @@
+{"uuid":"2b993b60-12a1-4991-8ce5-697466156c4f","name":"testrunner.ShippingPageTest","children":["055f19fa-7894-4094-8b41-16675d8e503b"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1694261795284,"stop":1694261802783}],"afters":[],"start":1694261713210,"stop":1694261846595}

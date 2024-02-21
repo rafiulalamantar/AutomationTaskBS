@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="All Test Cases">
+        <classes>
+            <class name="testrunner.HomePageTest"></class>
+            <class name="testrunner.AddtoCartTest"></class>
+            <class name="testrunner.AddressPageTest"></class>
+            <class name="testrunner.ShippingPageTest"></class>
+            <class name="testrunner.PaymentInfoPageTest"></class>
+            <class name="testrunner.PlaceOrderPageTest"></class>
+        </classes>
+    </test>
+</suite>
